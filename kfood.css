@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Poor+Story&family=Jua&display=swap');
+
+
+/* 스타일 초기화 */
+* { margin: 0px; padding: 0px; }
+header, footer { text-align : center; font-family: 'Nanum Pen Script', cursive; width: 100%; }
+body { margin: auto; }
+footer { position: fixed; bottom: 0px; }
+
+/* 공통 스타일 */
+h1, footer { background-color:#DAFFA9; }
+h1 { padding: 10px; font-size: 40px ; color: black; }
+h3 { font-family: 'Jua', sans-serif; margin: 10px; font-size: 20px; color:#8041D9; text-shadow: 4px 4px 12px #8041D9; }
+h4, h5 { padding: 10px; margin 10px; clear: both; }
+
+p { padding-bottom: 40px; }
+section > article > img { border: 0; padding: 2px; float: left; padding-right: 10px; }
+section > article > img:hover { height: 100%; width: 100%; }
+section > article > ol { margin-left: 40px; }
+section > article > ul { margin-left: 40px; }
+section > article > h3 { margin-top: 30px; clear: both; }
+section { padding: 5px; padding-top: 10px; }
+aside { padding: 5px; padding-top: 10px; background-color:#FFFFCC; }
+nav { margin: 5px 5px; }
+nav > span > a {
+	font-family: 'Poor Story', cursive;  margin: 0px; padding: 5px; border: 2px outset orange;
+	text-decoration: none; background: orange;
+}
+nav > span > a:hover { background-color:#8C5F60; color: white; }
+nav > span > a:active { background-color:#555BFF; color: white; }
+
+@media only screen and (min-width: 321px) and (orientation: landscape) {
+	section { width: 80%; float: left; padding-bottom: 20px; }
+	aside { width: 15%; float: right; }
+	footer { clear: both; }
+}
+
+table { border-top: 3px solid; border-bottom: 1px solid; border-collapse: collapse;  }
+table th { border-bottom: 2px solid; }
+
+
+aside > ul li { list-style-position: inside; list-style-image: url("img/치킨아이콘.jpg"); }
+
+/* main_introduce.html 적용 */
+.main_table th { background-color:#FFC6CA; }
+.main_table tr:nth-child(odd) { background-color:#EAFFFF; }
+.main_table tr:nth-of-type(even) { background-color:#AAEEEE; }
+
+/* Franchise.html 적용 */
+.hodduck img { float: right; margin-left: 10px; }
+#err { clear:both; }
+article > ol { margin-bottom: 40px; }
